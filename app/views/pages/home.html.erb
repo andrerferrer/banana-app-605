@@ -1,0 +1,17 @@
+<h1>Welcome to my home page</h1>
+
+<p>
+  <% now = Time.now  %>
+  The time now is <%= now %>
+</p>
+
+<p>
+  1 + 2 = <%= 1 + 2 %>
+</p>
+
+<h2>LINKS</h2>
+<a href="/contact">Contact Page</a>
+<%= link_to 'Contact Page', '/contact' %>
+<%= link_to 'Contact Page', contact_path %>
+
+<%# <a href="/about">About</a> %>

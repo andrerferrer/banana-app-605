@@ -1,0 +1,21 @@
+<form action="/contact" method="get">
+  <input type="text" 
+         name="member" 
+         placeholder="Who are you looking for?"
+         value="<%= params[:member] %>"> 
+  <input type="submit">
+</form>
+
+<ul>
+  <%# this instance var is coming from the controller %>
+  <% @team_mates.each do |team_mate| %>
+    <li>
+      <%= team_mate %>
+    </li>
+  <% end %>
+</ul>
+
+<%# print embedded - pe %>
+<%# embedded ruby - er %>
+
+<%= link_to 'Back to home', root_path %>

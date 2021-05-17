@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'about', to: 'pages#about'
+  # verb 'path', to: 'controller#action'
+  get 'contact', to: 'pages#contact'
+  
+  # if we want to create a path to the root, it's just '/'
+  get '/', to: 'pages#home', as: :root
+  # the above is the same as
+  #  root to: 'pages#home'
 end
